@@ -1,0 +1,12 @@
+package program8;
+
+public class Outer {
+	void display() {
+		System.out.println("This is the outer class display method.");
+	}
+	class Inner{
+		void display() {
+			System.out.println("This is the inner class display method.");
+		}
+	}
+}

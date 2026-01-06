@@ -1,0 +1,9 @@
+package program6;
+
+public class Triangle1 extends Shape1 {
+	double a,b,c;
+	public Triangle1() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

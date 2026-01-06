@@ -1,0 +1,9 @@
+package program6;
+
+public class Triangle1 {
+
+	public Triangle1() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

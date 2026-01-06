@@ -1,0 +1,8 @@
+package program8;
+
+public class Inner {
+	void display() {
+		System.out.println("This is the inner class display method.");
+	}
+
+}

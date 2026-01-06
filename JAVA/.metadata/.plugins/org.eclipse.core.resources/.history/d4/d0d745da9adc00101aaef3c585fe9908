@@ -1,0 +1,10 @@
+package program4;
+
+public class TestMyPoint {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

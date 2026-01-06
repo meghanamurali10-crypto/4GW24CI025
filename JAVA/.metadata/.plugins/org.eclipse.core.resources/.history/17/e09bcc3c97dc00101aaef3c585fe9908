@@ -1,0 +1,5 @@
+package program6;
+
+public abstract class Shape1 {
+
+}

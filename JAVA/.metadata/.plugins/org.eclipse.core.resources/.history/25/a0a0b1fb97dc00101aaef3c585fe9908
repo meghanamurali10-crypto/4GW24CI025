@@ -1,0 +1,9 @@
+package program6;
+
+public class Circle1 {
+
+	public Circle1() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

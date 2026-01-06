@@ -1,0 +1,9 @@
+package program4;
+
+public class MyPoint {
+
+	public MyPoint() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
