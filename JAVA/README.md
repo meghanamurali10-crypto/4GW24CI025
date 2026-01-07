@@ -126,3 +126,20 @@ End Time: 12:30:42
 ---
 
 ***
+
+##  Contact
+
+**Meghana M**  
+GitHub: [@meghanamurali10-crypto](https://github.com/meghanamurali10-crypto)  
+LinkedIn: [Meghana Murali](www.linkedin.com/in/meghana-m-2073b9303)
+
+**Anjali Ajith**  
+GitHub: [@anjaliajithofficial-dev](https://github.com/anjaliajithofficial-dev)  
+LinkedIn: [Anjali Ajith](www.linkedin.com/in/anjali-ajith-082713352)
+
+---
+**Project Status**: Completed and Functional  
+**Last Updated**: January 2026  
+**Version**: 1.0
+
+---
