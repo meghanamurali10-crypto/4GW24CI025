@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to our blog</title>
+  <style>
+    body {
+      background-color: #bbf8d4;
+      color: #8733e7d7;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 35%;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: #00695c;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 5px 10px;
+      border: 5px;
+    }
+
+    input[type="reset"] {
+      background-color: #f44336;
+      color: white;
+      padding: 5px 10px;
+    
+    }
+
+    td {
+      padding: 8px;
+      
+    }
+
+  </style>
+</head>
+<body>
+  <center>
+    <h2>Login</h2>
+    <form action="blogpage.html" method="post">
+      <table>
+        <tr>
+          <td><label for="fullname">Full Name:</label></td>
+          <td><input type="text" id="fullname" name="fullname"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email"></td>
+        </tr>       
+              
+          <td><label for="dept">Department:</label></td>
+          <td>
+            <select id="dept" name="dept">
+              <option value="CSE(AI&ML)">CSE(AI&ML)</option>
+      	      <option value="CSE">CSE</option>
+              <option value="ECE">ECE</option>
+              <option value="ISE">ISE</option>
+            </select>
+          </td>
+        </tr>
+
+        
+        <!-- Hidden input -->
+        <tr style="display:none;">
+          <td colspan="2"><input type="hidden" name="user_id" value="12345"></td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <input type="submit" value="Submit">
+            
+          </td>
+        </tr>
+
+      </table>
+    
+
+    </form>
+
+  </center>
+</body>
+</html>

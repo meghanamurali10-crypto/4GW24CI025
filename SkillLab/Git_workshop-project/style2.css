@@ -1,0 +1,28 @@
+body{
+	font-family:'Arial',Calibri;
+	margin:0;
+	padding:0;
+	background-color: lightpink;
+	
+	
+}
+h1{
+	text-align:center;
+	
+	text-decoration: underline;
+}
+
+p{
+	font-family:'Calibri';
+	font-size:20px;
+	
+}
+
+img {
+    width: 550px;
+    height: auto; 
+	
+  float: left; /* Aligns the image to the left */
+  margin-right: 15px; /* Adds space between the image and the text */
+
+}
