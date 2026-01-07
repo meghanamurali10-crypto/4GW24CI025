@@ -1,8 +1,8 @@
 # 4GW24CI025 - Academic Projects Repository
 
-**Student Assignment Portfolio** containing Data Structures & Algorithms (DSA) practice, Java programming exercises, Operating Systems Lab experiments, Git workshop projects, and GHCI Hackathon project **AHA**.[1]
+**Student Assignment Portfolio** containing Data Structures & Algorithms (DSA) practice, Java programming exercises, Operating Systems Lab experiments, Git workshop projects, and GHCI Hackathon project **AHA**.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [DSA Practice](#dsa-practice)
 - [Java Programming](#java-programs)
@@ -12,12 +12,12 @@
 - [Setup & Usage](#setup)
 - [License](#license)
 
-## 🧮 DSA Practice
+##  DSA Practice
 
 **Core Data Structures & Algorithms implementations in Java** for academic coursework.
 
 ```
-📁 dsa/
+ dsa/
 ├── Arrays/
 ├── LinkedLists/
 ├── Stacks/
@@ -40,12 +40,12 @@
 - Graph traversals (BFS, DFS)
 - Sorting algorithms analysis[1]
 
-## ☕ Java Programs
+##  Java Programs
 
 **Object-Oriented Programming & Core Java exercises**
 
 ```
-📁 java/
+ java/
 ├── OOP/
 │   ├── Inheritance/
 │   ├── Polymorphism/
@@ -68,12 +68,12 @@
 - Multithreading with synchronization
 - Collections Framework usage[1]
 
-## 🖥️ OS Lab Experiments
+##  OS Lab Experiments
 
 **Operating Systems Lab implementations**
 
 ```
-📁 oslab/
+ oslab/
 ├── ProcessManagement/
 │   └── ForkExecSimulation.java
 ├── Synchronization/
@@ -95,12 +95,12 @@
 - Page replacement algorithms
 - System calls simulation[2][1]
 
-## 🔧 Git Workshop
+##  Git Workshop
 
 **Hands-on Git & GitHub workshop exercises**
 
 ```
-📁 git-workshop/
+ git-workshop/
 ├── 01-basics/
 ├── 02-branching/
 ├── 03-merging/
@@ -115,12 +115,12 @@
 - Pull Requests & Code Reviews
 - GitHub Pages deployment[1]
 
-## 🎯 GHCI Hackathon - AHA
+##  GHCI Hackathon - AHA
 
 **AnitaB.org India GHCI 2025 Hackathon Project** - *Unbound with GenAI*[3][4]
 
 ```
-📁 ghci-aha/
+ ghci-aha/
 ├── src/
 ├── docs/
 │   └── Hackathon_Report.pdf
@@ -135,7 +135,7 @@
 - **Tech Stack**: Java backend + AI/ML integrations
 - **Focus**: Ethical AI solutions for social impact[5]
 
-## 🚀 Setup & Usage
+##  Setup & Usage
 
 ```bash
 # Clone repository
@@ -152,7 +152,7 @@ java dsa/LinkedListDemo
 java oslab/ProducerConsumer
 ```
 
-## 📚 Learning Outcomes
+##  Learning Outcomes
 
 - **DSA**: Algorithm analysis & implementation
 - **Java**: OOP principles & advanced concepts
@@ -160,13 +160,13 @@ java oslab/ProducerConsumer
 - **Git**: Version control best practices
 - **Hackathon**: Team collaboration & rapid prototyping[1]
 
-## 👩‍🎓 Student Details
+##  Student Details
 
-**Meghana Murali**  
+**Meghana M**  
 **USN**: 4GW24CI025  
-**Academic Year**: 2025-26[6]
+**Academic Year**: 2025-26
 
-## 📄 License
+##  License
 
 ```
 MIT License - Academic Project
@@ -175,7 +175,7 @@ Copyright (c) 2026 Meghana Murali
 
 ***
 
-*Repository maintained for academic coursework submission & portfolio showcase*[6][1]
+*Repository maintained for academic coursework submission & portfolio showcase*
 
 [1](https://github.com/meghanamurali10-crypto/4GW24CI025)
 [2](https://github.com/topics/os-lab?o=desc&s=)
