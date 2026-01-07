@@ -19,17 +19,6 @@ Perfect for **Operating Systems coursework** on process synchronization and dead
 
 ---
 
-##  Team Members
-**Meghana M** - 4GW24CI025  
-GitHub: [@meghanamurali10-crypto](https://github.com/meghanamurali10-crypto)  
-LinkedIn: [Meghana Murali](https://www.linkedin.com/in/meghana-m-2073b9303)
-
-**Anjali Ajith** - 4GW24CI003  
-GitHub: [@anjaliajithofficial-dev](https://github.com/anjaliajithofficial-dev)  
-LinkedIn: [Anjali Ajith](https://www.linkedin.com/in/anjali-ajith-082713352)
-
----
-
 ##  Program Structure
 ```
 deadlock_study/
@@ -113,7 +102,16 @@ P2 releases R2 before acquiring R1 → Breaks circular wait
 - **Libraries:** POSIX threads (`pthread.h`), semaphores (`semaphore.h`)
 
 ---
+##  Team Members
+**Meghana M** - 4GW24CI025  
+GitHub: [@meghanamurali10-crypto](https://github.com/meghanamurali10-crypto)  
+LinkedIn: [Meghana Murali](https://www.linkedin.com/in/meghana-m-2073b9303)
 
+**Anjali Ajith** - 4GW24CI003  
+GitHub: [@anjaliajithofficial-dev](https://github.com/anjaliajithofficial-dev)  
+LinkedIn: [Anjali Ajith](https://www.linkedin.com/in/anjali-ajith-082713352)
+
+---
 ##  License
 This project is created for educational purposes as part of Operating Systems coursework.
 
