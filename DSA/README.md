@@ -2,12 +2,12 @@
 
 An automated student lab entry and exit tracking system implemented in C using linked list data structures. This system replaces traditional manual lab books with a digital solution for efficient lab management.
 
-## 👥 Team Members
+##  Team Members
 
 - **Meghana M** - 4GW24CI025
 - **Anjali Ajith** - 4GW24CI003
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [About the Project](#about-the-project)
 - [Features](#features)
@@ -19,7 +19,7 @@ An automated student lab entry and exit tracking system implemented in C using l
 - [Contributing](#contributing)
 - [Acknowledgments](#acknowledgments)
 
-## 🎯 About the Project
+##  About the Project
 
 The **Lab Book Automation System** is a command-line application designed to automate the process of tracking student attendance in computer labs. The system allows students to clock in and out by scanning their USN/ID, while providing administrators with real-time occupancy data and historical records.
 
@@ -41,7 +41,7 @@ A digital system that:
 - Calculates session durations automatically
 - Provides admin dashboard for monitoring
 
-## ✨ Features
+##  Features
 
 ### Student Features
 - **Quick Scan Entry/Exit**: Single-scan system for both check-in and check-out
@@ -62,7 +62,7 @@ A digital system that:
 - Active/inactive session management
 - Time calculation utilities
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ### Data Structure
 
@@ -93,7 +93,7 @@ struct Student {
    - Time calculation functions
    - Memory management routines
 
-## 💾 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -126,7 +126,7 @@ On Windows:
 lab_book.exe
 ```
 
-## 📖 Usage Guide
+##  Usage Guide
 
 ### Main Menu
 
@@ -144,19 +144,19 @@ lab_book.exe
    - Enter your USN/ID (e.g., 4GW24CI025)
    - Enter your full name when prompted
    - Enter the system number you're using
-   - ✅ Entry recorded with start time
+   -  Entry recorded with start time
 
 2. **Returning Entry**
    - Select option 1
    - Enter your USN/ID
    - System recognizes you automatically
    - Enter system number
-   - ✅ New session created
+   - New session created
 
 3. **Exit/Clock Out**
    - Select option 1
    - Enter your USN/ID
-   - ✅ System automatically records exit time and calculates duration
+   - System automatically records exit time and calculates duration
 
 ### Admin Workflow
 
@@ -170,7 +170,7 @@ lab_book.exe
    - Select option 2 (View Full Lab Book History)
    - See all entries with start/end times and durations
 
-## 🔧 Technical Implementation
+##  Technical Implementation
 
 ### Key Algorithms
 
@@ -209,7 +209,7 @@ double duration = difftime(mktime(&endTime), mktime(&startTime));
 - Input buffer clearing to prevent overflow
 - (TODO: Deallocation on program exit)
 
-## 📊 Sample Output
+##  Sample Output
 
 ### Student Entry
 ```
@@ -218,7 +218,7 @@ Please 'scan' your USN/ID: 4GW24CI025
 New student detected. Enter your full name: Meghana M
 Enter the system number you are using: 15
 
-✅ Entry added successfully!
+Entry added successfully!
 Start Time: Tue Jan  7 10:30:45 2026
 ```
 
@@ -233,7 +233,7 @@ Anjali Ajith    4GW24CI026      12          11:00:22        15 min (900 sec)
 Total Active Systems Occupied: 2
 ```
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 ### Planned Features
 - [ ] File-based persistent storage (CSV/Text files)
@@ -254,7 +254,7 @@ Total Active Systems Occupied: 2
 - [ ] Add logging system
 - [ ] Input validation enhancements
 
-## 📝 Assignment Details
+##  Assignment Details
 
 **Course**: Data Structures and Algorithms / Computer Lab Management  
 **Assignment Type**: Mini Project  
@@ -267,7 +267,7 @@ Total Active Systems Occupied: 2
 - Modular programming
 - Error handling
 
-## 🤝 Contributing
+##  Contributing
 
 This is an academic project, but suggestions and improvements are welcome!
 
@@ -277,7 +277,7 @@ This is an academic project, but suggestions and improvements are welcome!
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📚 Learning Outcomes
+##  Learning Outcomes
 
 Through this project, we gained hands-on experience with:
 - Implementing linked lists from scratch
@@ -288,18 +288,28 @@ Through this project, we gained hands-on experience with:
 - Modular code organization
 - Memory management in C
 
-## 🐛 Known Issues
+##  Known Issues
 
 - Memory not freed on program exit (to be fixed)
 - No persistent storage (data lost on exit)
 - Limited to single active session per student at a time
 - Console-based interface only
 
-## 📄 License
+##  License
 
 This project is submitted as academic coursework and is subject to institutional academic policies.
+##  Contact
 
-**Project Status**: ✅ Completed and Functional  
+**Meghana M**  
+GitHub: [@meghanamurali10-crypto](https://github.com/meghanamurali10-crypto)  
+LinkedIn: [Meghana Murali](www.linkedin.com/in/meghana-m-2073b9303)
+
+**Anjali Ajith**  
+GitHub: [@anjaliajithofficial-dev](https://github.com/anjaliajithofficial-dev)  
+LinkedIn: [Anjali Ajith](www.linkedin.com/in/anjali-ajith-082713352)
+
+---
+**Project Status**: Completed and Functional  
 **Last Updated**: January 2026  
 **Version**: 1.0
 
