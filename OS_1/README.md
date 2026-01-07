@@ -45,7 +45,7 @@ P2: Acquired R2 (Mutual Exclusion)
 P1: Hold&Wait - Trying R2 (Circular Wait)  ← STUCK!
 P2: Hold&Wait - Trying R1 (Circular Wait)  ← STUCK!
 ```
-** Result:** Both threads **deadlock** (use `Ctrl+C` to stop).
+**Result:** Both threads **deadlock** (use `Ctrl+C` to stop).
 
 ### 3. **Run Safe Prevention**
 ```bash
@@ -60,7 +60,7 @@ P2: Safe - Release R2, Acquire R1 then R2
 P1: Safe - Acquired R2 (Resource Ordering)
 Program completed successfully!
 ```
-** Result:** Both threads complete **without deadlock**.
+**Result:** Both threads complete **without deadlock**.
 
 ---
 
