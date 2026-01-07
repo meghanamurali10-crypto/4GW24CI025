@@ -1,4 +1,4 @@
-# Lab Book Automation System 📚💻
+# Lab Book Automation System 
 
 An automated student lab entry and exit tracking system implemented in C using linked list data structures. This system replaces traditional manual lab books with a digital solution for efficient lab management.
 
