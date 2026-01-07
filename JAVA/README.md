@@ -24,7 +24,7 @@ This project demonstrates practical use of **object-oriented programming**, **co
   Simple, interactive, menu-driven navigation for students and admins.
 
 ***
-* Team Members
+**Team Members**
 
 Meghana M - 4GW24CI025
 
