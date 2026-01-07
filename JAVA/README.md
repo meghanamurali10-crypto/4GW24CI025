@@ -24,7 +24,7 @@ This project demonstrates practical use of **object-oriented programming**, **co
   Simple, interactive, menu-driven navigation for students and admins.
 
 ***
-** Team Members**
+* Team Members*
 
 Meghana M - 4GW24CI025
 Anjali Ajith - 4GW24CI003
@@ -120,7 +120,7 @@ Start Time: 10:15:24
 
 Later, scanning the same ID marks exit:
 ```
- Clock Out marked successfully for Priya Sharma
+ Clock Out marked successfully for Meghana M
 End Time: 12:30:42
 ---
 
