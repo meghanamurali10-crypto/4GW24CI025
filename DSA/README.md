@@ -93,14 +93,6 @@ struct Student {
    - Time calculation functions
    - Memory management routines
 
-##  Installation
-
-### Prerequisites
-
-- **GCC Compiler** (MinGW for Windows, GCC for Linux/Mac)
-- **Operating System**: Windows 7+, Linux, macOS
-- **Terminal/Command Prompt** access
-
 ### Steps
 
 1. **Clone or download the source code**
