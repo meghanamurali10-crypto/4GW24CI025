@@ -30,7 +30,7 @@ Meghana M - 4GW24CI025
 Anjali Ajith - 4GW24CI003
 
 ***
-## 🧩 Project Structure
+##  Project Structure
 
 ```
 java_assisgnment_lab_book_assignment/
