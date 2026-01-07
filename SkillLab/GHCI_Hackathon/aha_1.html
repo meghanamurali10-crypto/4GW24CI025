@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Actionable Health Assistant (AHA)</title>
+  <!-- Using standard CSS for a clean, accessible look -->
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 20px;
+      background: #f0f8ff;
+      /* Light blue background for a clean, health-focused look */
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      /* Dark blue-gray for strong contrast */
+      padding-bottom: 10px;
+      border-bottom: 2px solid #27ae60;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    input,
+    select,
+    button {
+      padding: 12px;
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid #bdc3c7;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #27ae60;
+      /* Green button */
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #2ecc71;
+    }
+
+    .result-section {
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #dcdcdc;
+      border-radius: 8px;
+      background-color: #ecf0f1;
+    }
+
+    .risk-alert {
+      color: #c0392b;
+      /* Red for alert */
+      font-weight: bold;
+    }
+
+    .action-advice {
+      color: #2980b9;
+      /* Blue for advice */
+    }
+
+    .clinic-link {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #d1f7e8;
+      /* Light green for link */
+      border-radius: 4px;
+    }
+
+    .loading {
+      text-align: center;
+      font-size: 1.2em;
+      color: #7f8c8d;
+      margin-top: 20px;
+    }
+
+    .setup-alert {
+      background-color: #f39c12;
+      color: white;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 0;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Actionable Health Assistant (AHA)</h1>
+
+    <div id="setup-warning" class="setup-alert">
+      ⚠️ **SETUP REQUIRED**: Update the `appsScriptUrl` variable in the script block below with your deployed Google
+      Apps Script URL.
+    </div>
+
+    <!-- Input Section -->
+    <div class="input-group">
+      <label for="symptom">Symptom/Keyword:</label>
+      <input type="text" id="symptom" placeholder="e.g., High Fever, Minor Cut" />
+    </div>
+
+    <div class="input-group">
+      <label for="lang">Language:</label>
+      <select id="lang" onchange="updateHelplines()">
+        <option value="English">English</option>
+        <option value="Hindi">Hindi (हिंदी)</option>
+        <!-- Add other languages here if data is present in the sheet -->
+      </select>
+    </div>
+
+    <button onclick="searchSymptom()">Get Advice</button>
+
+    <!-- Result Display -->
+    <div id="loading" class="loading" style="display:none;">
+      Loading advice...
+    </div>
+
+    <div id="result" class="result-section" style="display:none;">
+      <h3>Guidance:</h3>
+
+      <p><strong>Keyword Matched:</strong> <span id="match-keyword">N/A</span></p>
+
+      <p class="action-advice"><strong>Action:</strong> <span id="action"></span></p>
+
+      <p class="risk-alert"><strong>Risk Alert:</strong> <span id="risk"></span></p>
+
+      <div id="clinic-details" class="clinic-link" style="display:none;">
+        <p><strong>Clinic Link:</strong> <a id="clinic-link-el" href="#" target="_blank">Find Nearest Clinic</a></p>
+      </div>
+
+      <div class="helpline-info">
+        <p><strong>Emergency:</strong> <span id="helpline-el">Call 112 (or 108)</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 🔴 IMPORTANT: REPLACE THIS PLACEHOLDER WITH YOUR DEPLOYED GOOGLE APPS SCRIPT URL (e.g., https://script.google.com/macros/s/AKfyc.../exec)
+    const appsScriptUrl = 'https://script.google.com/macros/s/AKfycbweotU9b_F9g5Gm3KD_NO_X_xAbLTHaiiOTrDVHu_larVVAE-ZayeuwXp77TpAmDA8/exec';
+
+    const setupWarning = document.getElementById('setup-warning');
+    if (appsScriptUrl.includes('YOUR_DEPLOYED_WEB_APP_URL_HERE')) {
+      setupWarning.style.display = 'block';
+    } else {
+      setupWarning.style.display = 'none';
+    }
+
+    const resultEl = document.getElementById('result');
+    const loadingEl = document.getElementById('loading');
+    const symptomEl = document.getElementById('symptom');
+    const langEl = document.getElementById('lang');
+    const matchKeywordEl = document.getElementById('match-keyword');
+    const actionEl = document.getElementById('action');
+    const riskEl = document.getElementById('risk');
+    const clinicDetailsEl = document.getElementById('clinic-details');
+    const clinicLinkEl = document.getElementById('clinic-link-el');
+    const helplineEl = document.getElementById('helpline-el');
+
+
+    function updateHelplines() {
+      const lang = langEl.value;
+      if (lang === 'Hindi') {
+        helplineEl.textContent = 'तुरंत 108 या 112 डायल करें।';
+      } else {
+        helplineEl.textContent = 'Call 112 (or 108) immediately.';
+      }
+    }
+
+    async function searchSymptom() {
+      if (appsScriptUrl.includes('YOUR_DEPLOYED_WEB_APP_URL_HERE')) {
+        alert("Please update the 'appsScriptUrl' variable in the code with your actual deployment URL.");
+        return;
+      }
+
+      const keyword = symptomEl.value.trim();
+      const lang = langEl.value;
+
+      if (keyword.length < 2) {
+        alert("Please enter a valid symptom or keyword.");
+        return;
+      }
+
+      loadingEl.style.display = 'block';
+      resultEl.style.display = 'none';
+
+      const formData = new FormData();
+      formData.append('keyword', keyword);
+      formData.append('lang', lang);
+
+      try {
+        const response = await fetch(appsScriptUrl, {
+          method: 'POST',
+          body: formData,
+          // Redirect mode is required for GAS doPost to work
+          redirect: 'follow'
+        });
+
+        if (!response.ok) {
+          throw new Error(`Server responded with status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log("Server Response:", data);
+
+        // Populate fields regardless of match status
+        matchKeywordEl.textContent = data.closestMatch;
+        actionEl.textContent = data.action;
+        riskEl.textContent = data.riskAlert;
+
+        // Handle Clinic Link display
+        if (data.clinicLink) {
+          clinicLinkEl.href = data.clinicLink;
+          clinicDetailsEl.style.display = 'block';
+        } else {
+          clinicDetailsEl.style.display = 'none';
+        }
+
+        // Handle server-side errors reported in riskAlert
+        if (!data.matchFound && data.riskAlert.includes('Error:')) {
+          // If it's a structural error (like sheet or header missing)
+          matchKeywordEl.textContent = "System Error";
+        }
+
+
+      } catch (error) {
+        console.error('Fetch Error:', error);
+        actionEl.textContent = "Connection Error.";
+        riskEl.textContent = `Failed to connect to the Apps Script backend. Error: ${error.message}`;
+        matchKeywordEl.textContent = "N/A";
+        clinicDetailsEl.style.display = 'none';
+      } finally {
+        loadingEl.style.display = 'none';
+        resultEl.style.display = 'block';
+      }
+    }
+
+    // Enter key support
+    document.getElementById('symptom').addEventListener('keypress', e => { if (e.key === 'Enter') searchSymptom(); });
+
+    // Initial setup
+    window.onload = updateHelplines;
+  </script>
+
+  <footer>
+    AHA • Symptom-smart clinic routing • Low-resource optimized
+  </footer>
+
+</body>
+
+</html>
