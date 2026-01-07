@@ -1,6 +1,6 @@
 # 4GW24CI025 - Academic Projects Repository
 
-**Student Assignment Portfolio** containing Data Structures & Algorithms (DSA) practice, Java programming exercises, Operating Systems Lab experiments, Git workshop projects, and GHCI Hackathon project **AHA**.
+**Student Assignment Portfolio** containing Data Structures & Algorithms (DSA) practice, Java programming exercises, Operating Systems Lab experiments, Git workshop projects, and GHCI Hackathon project AHA.
 
 ##  Table of Contents
 
@@ -178,8 +178,8 @@ Copyright (c) 2026 Meghana Murali
 *Repository maintained for academic coursework submission & portfolio showcase*
 
 [1](https://github.com/meghanamurali10-crypto/4GW24CI025)
-[2](https://github.com/topics/os-lab?o=desc&s=)
-[3](https://mycareernet.in/mycareernet/contests/AnitaB-org-India-AnitaB-org-India-GHCI-25-Ha-252)
-[4](https://ghci.anitabindia.org)
-[5](https://www.linkedin.com/posts/mycareernet_ghci-hackathon-winners-activity-7402253397091143681-ZSOJ)
+[2](https://github.com/meghanamurali10-crypto/4GW24CI025/tree/main/DSA)
+[3](https://github.com/meghanamurali10-crypto/4GW24CI025/tree/main/JAVA)
+[4](https://github.com/meghanamurali10-crypto/4GW24CI025/tree/main/OS_1)
+[5](https://github.com/meghanamurali10-crypto/4GW24CI025/tree/main/SkillLab)
 [6](https://github.com/meghanamurali)
