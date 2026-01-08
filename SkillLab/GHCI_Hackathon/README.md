@@ -182,7 +182,7 @@ This project emphasizes:
 
 ---
 
-## 👩‍💻 Team
+##  Team
 
 - **Meghana M**  
 - **Anjali**
@@ -191,7 +191,7 @@ GHCI Hackathon Participant
 
 ---
 
-## 📄 License
+##  License
 
 This project is released under the **MIT License**.
 
